@@ -9,12 +9,13 @@ CS_A = 2 ** 1  # 00X0
 WE_B = 2 ** 2  # 0X00
 CS_B = 2 ** 3  # X000
 
-WE_C = 2 ** 4
-CS_C = 2 ** 5
 
 ALU_ADD = 0
-ALU_SUB = 2 ** 6
-ALU_EN = 2 ** 7
+ALU_SUB = 2 ** 4
+ALU_EN = 2 ** 5
+
+WE_C = 2 ** 6
+CS_C = 2 ** 7
 
 WE_MC = 2 ** 8
 CS_MC = 2 ** 9
@@ -26,7 +27,9 @@ CS_PC = 2 ** 12
 HLT = 2 ** 15
 
 micro = [
-    CS_MC | CS_A | WE_A | WE_PC | EN_PC| CS_PC,
+    CS_MC | CS_A | WE_A | WE_PC | EN_PC | CS_PC,
+    CS_MC | CS_B | WE_B | WE_PC | EN_PC | CS_PC,
+    ALU_EN| CS_C | WE_C,
     HLT,
 ]
 
