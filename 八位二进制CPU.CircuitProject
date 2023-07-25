@@ -5,7 +5,7 @@
 		<lc:Name>8bitCpu</lc:Name>
 		<lc:Zoom>0.9624719101123561</lc:Zoom>
 		<lc:Frequency>1</lc:Frequency>
-		<lc:LogicalCircuitId>d7818ccd-801c-4326-9792-325430cd990b</lc:LogicalCircuitId>
+		<lc:LogicalCircuitId>e28a5d99-3b3b-43ea-b6f9-4491e9e00ca6</lc:LogicalCircuitId>
 	</lc:Project>
 	<lc:LogicalCircuit>
 		<lc:LogicalCircuitId>3ee05d2e-3d1e-4db6-b01f-a072acc8c999</lc:LogicalCircuitId>
@@ -20,13 +20,13 @@
 	</lc:LogicalCircuit>
 	<lc:LogicalCircuit>
 		<lc:LogicalCircuitId>4948c541-6b81-4bd9-843b-db5a7d38a5f3</lc:LogicalCircuitId>
-		<lc:Name>Full Adder(1)</lc:Name>
+		<lc:Name>Full Adder(Manual)</lc:Name>
 		<lc:Notation>FA</lc:Notation>
 		<lc:Category>Adder</lc:Category>
 	</lc:LogicalCircuit>
 	<lc:LogicalCircuit>
 		<lc:LogicalCircuitId>1768412b-7b6d-4078-b957-33404e1f72af</lc:LogicalCircuitId>
-		<lc:Name>Full Adder(2)</lc:Name>
+		<lc:Name>Full Adder(ROM)</lc:Name>
 		<lc:Notation>FA</lc:Notation>
 		<lc:Category>Adder</lc:Category>
 	</lc:LogicalCircuit>
@@ -27069,5 +27069,14 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</lc
 		<lc:Y>19</lc:Y>
 		<lc:Height>3</lc:Height>
 		<lc:Note>&lt;FlowDocument TextAlignment="Left" PagePadding="5,0,5,0" AllowDrop="True" NumberSubstitution.CultureSource="User" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"&gt;&lt;Paragraph&gt;&lt;Run xml:lang="zh-cn"&gt;RAM寄存器，存储了256个地址以及对应数值&lt;/Run&gt;&lt;/Paragraph&gt;&lt;/FlowDocument&gt;</lc:Note>
+	</lc:TextNote>
+	<lc:TextNote>
+		<lc:TextNoteId>f1003848-52bb-4f7b-a4c1-3fcf68776dae</lc:TextNoteId>
+		<lc:LogicalCircuitId>e28a5d99-3b3b-43ea-b6f9-4491e9e00ca6</lc:LogicalCircuitId>
+		<lc:X>58</lc:X>
+		<lc:Y>29</lc:Y>
+		<lc:Width>37</lc:Width>
+		<lc:Height>20</lc:Height>
+		<lc:Note>&lt;FlowDocument TextAlignment="Left" PagePadding="5,0,5,0" AllowDrop="True" NumberSubstitution.CultureSource="User" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"&gt;&lt;Paragraph&gt;&lt;Run xml:lang="zh-cn"&gt;运行过程解析：&lt;/Run&gt;&lt;/Paragraph&gt;&lt;Paragraph&gt;&lt;Run xml:lang="zh-cn"&gt;该电路存在两个程序计数器（PC），一个用于控制内存（RAM），一个通过ROM输出信号控制电子元件。&lt;/Run&gt;&lt;/Paragraph&gt;&lt;Paragraph&gt;&lt;Run xml:lang="zh-cn"&gt;在电源开机前，下PC的CP本就为1，不会触发自增，输出0使得ROM输出电信号以控制MC读入RAM传给它的值并写入数据线上，同时，REG_A接收数据线上的值，保持上PC的可写。&lt;/Run&gt;&lt;/Paragraph&gt;&lt;Paragraph&gt;&lt;Run xml:lang="zh-cn"&gt;电源开机发送上升沿信号后，上PC触发自增使得RAM输出值改变，此时下PC仍为0，MC将RAM中的值输入到数据线上。&lt;/Run&gt;&lt;/Paragraph&gt;&lt;Paragraph&gt;&lt;Run xml:lang="zh-cn"&gt;下降沿信号使得下PC触发自增改变电子元件的工作状态使得，REGB读取数据线上的数值并存储。&lt;/Run&gt;&lt;/Paragraph&gt;&lt;Paragraph&gt;&lt;Run xml:lang="zh-cn"&gt;余下过程略....&lt;/Run&gt;&lt;/Paragraph&gt;&lt;Paragraph&gt;&lt;Run xml:lang="zh-cn" xml:space="preserve" /&gt;&lt;/Paragraph&gt;&lt;/FlowDocument&gt;</lc:Note>
 	</lc:TextNote>
 </lc:CircuitProject>
