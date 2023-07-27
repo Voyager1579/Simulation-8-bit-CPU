@@ -37,7 +37,7 @@
     - mov dst, src
     - add dst, src
     - sub dst, src
-    - cmp op1,  op2
+    - cmp op1, op2
     - and dst, src
     - or dst, src
     - xor dst, src
