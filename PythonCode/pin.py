@@ -1,5 +1,6 @@
 # coding = utf-8
 
+# 管脚对应着电位信号,_OUT后缀为读信号，_IN后缀为写信号
 MSR = 1
 MAR = 2
 MDR = 3
@@ -86,10 +87,9 @@ PC_WE = 2 ** 14
 PC_CS = 2 ** 15
 PC_EN = 2 ** 16
 
+# 直接为PC设置操作信号
 PC_OUT = PC_CS
 PC_IN = PC_CS | PC_WE
-PC_INC = PC_CS | PC_WE| PC_EN
-
-
+PC_INC = PC_CS | PC_WE | PC_EN
 
 HLT = 2 ** 31

@@ -1,5 +1,6 @@
 # coding = utf-8
 
+# 532译码脚本
 import os
 
 dirname = os.path.dirname(__file__)

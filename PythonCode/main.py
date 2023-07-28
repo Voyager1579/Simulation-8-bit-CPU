@@ -1,7 +1,7 @@
 import os
 
 dirname = os.path.dirname(__file__)
-filename = os.path.join(dirname,'ins.bin')
+filename = os.path.join(dirname, 'ins.bin')
 
 A_WE = 2 ** 0  # 000X
 A_CS = 2 ** 1  # 00X0
@@ -35,7 +35,7 @@ micro = [
 
 with open(filename, 'wb') as file:
     for value in micro:
-        result = value.to_bytes(2,byteorder='little')
+        result = value.to_bytes(2, byteorder='little')
         file.write(result)
         print(value, result)
 

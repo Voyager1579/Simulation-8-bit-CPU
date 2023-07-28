@@ -3,7 +3,7 @@
 	<lc:Project>
 		<lc:ProjectId>6caad03a-b7a2-42b1-8489-fb2f8caaa2d3</lc:ProjectId>
 		<lc:Name>8bitCpu</lc:Name>
-		<lc:Zoom>0.7624719101123562</lc:Zoom>
+		<lc:Zoom>1.1624719101123562</lc:Zoom>
 		<lc:Frequency>1</lc:Frequency>
 		<lc:LogicalCircuitId>bcf77041-ecd8-4a96-b89a-1bad3cd349cb</lc:LogicalCircuitId>
 	</lc:Project>
@@ -3046,6 +3046,14 @@
 	<lc:CircuitProbe>
 		<lc:CircuitProbeId>216c5054-9800-4c0a-822a-c9a91d5bf2f5</lc:CircuitProbeId>
 		<lc:Name>216c5054-9800-4c0a-822a-c9a91d5bf2f5</lc:Name>
+	</lc:CircuitProbe>
+	<lc:CircuitProbe>
+		<lc:CircuitProbeId>97773dc9-16ee-45c3-befd-0400d0bc9229</lc:CircuitProbeId>
+		<lc:Name>97773dc9-16ee-45c3-befd-0400d0bc9229</lc:Name>
+	</lc:CircuitProbe>
+	<lc:CircuitProbe>
+		<lc:CircuitProbeId>413f4dfc-594a-4884-a5ce-d472409801ae</lc:CircuitProbeId>
+		<lc:Name>413f4dfc-594a-4884-a5ce-d472409801ae</lc:Name>
 	</lc:CircuitProbe>
 	<lc:Constant>
 		<lc:ConstantId>70c7f8b0-0800-4792-947a-50a354afe33b</lc:ConstantId>
@@ -18470,7 +18478,7 @@ gA==</lc:Data>
 		<lc:CircuitSymbolId>57e0e469-5d76-4ff7-8510-f67b9dfd9fa6</lc:CircuitSymbolId>
 		<lc:CircuitId>81fb7d9a-ab2f-4055-9e82-a382f5a5b6f0</lc:CircuitId>
 		<lc:LogicalCircuitId>553b0fda-d655-4e4c-a6a1-e86a0a9ce59c</lc:LogicalCircuitId>
-		<lc:X>7</lc:X>
+		<lc:X>6</lc:X>
 		<lc:Y>28</lc:Y>
 		<lc:Rotation>Right</lc:Rotation>
 	</lc:CircuitSymbol>
@@ -18478,7 +18486,7 @@ gA==</lc:Data>
 		<lc:CircuitSymbolId>10ce15de-8a08-47cf-82d1-7d7345d3444b</lc:CircuitSymbolId>
 		<lc:CircuitId>de8fa6f7-9643-4082-af8f-2f2ab162231d</lc:CircuitId>
 		<lc:LogicalCircuitId>553b0fda-d655-4e4c-a6a1-e86a0a9ce59c</lc:LogicalCircuitId>
-		<lc:X>7</lc:X>
+		<lc:X>6</lc:X>
 		<lc:Y>33</lc:Y>
 		<lc:Rotation>Right</lc:Rotation>
 	</lc:CircuitSymbol>
@@ -18663,6 +18671,20 @@ gA==</lc:Data>
 		<lc:LogicalCircuitId>bcf77041-ecd8-4a96-b89a-1bad3cd349cb</lc:LogicalCircuitId>
 		<lc:X>22</lc:X>
 		<lc:Y>30</lc:Y>
+	</lc:CircuitSymbol>
+	<lc:CircuitSymbol>
+		<lc:CircuitSymbolId>0c84f779-554d-473b-94a2-ef44b4d9e7c6</lc:CircuitSymbolId>
+		<lc:CircuitId>97773dc9-16ee-45c3-befd-0400d0bc9229</lc:CircuitId>
+		<lc:LogicalCircuitId>bcf77041-ecd8-4a96-b89a-1bad3cd349cb</lc:LogicalCircuitId>
+		<lc:X>23</lc:X>
+		<lc:Y>16</lc:Y>
+	</lc:CircuitSymbol>
+	<lc:CircuitSymbol>
+		<lc:CircuitSymbolId>1872c366-d378-46c0-b519-0a01b3c3593f</lc:CircuitSymbolId>
+		<lc:CircuitId>413f4dfc-594a-4884-a5ce-d472409801ae</lc:CircuitId>
+		<lc:LogicalCircuitId>bcf77041-ecd8-4a96-b89a-1bad3cd349cb</lc:LogicalCircuitId>
+		<lc:X>15</lc:X>
+		<lc:Y>15</lc:Y>
 	</lc:CircuitSymbol>
 	<lc:Wire>
 		<lc:WireId>f515bbe2-65ce-42a2-90c5-77c0b2a2ca68</lc:WireId>
@@ -45515,7 +45537,7 @@ gA==</lc:Data>
 	<lc:Wire>
 		<lc:WireId>81289ac4-2970-479c-a5ed-a7a3568ffd42</lc:WireId>
 		<lc:LogicalCircuitId>553b0fda-d655-4e4c-a6a1-e86a0a9ce59c</lc:LogicalCircuitId>
-		<lc:X1>8</lc:X1>
+		<lc:X1>7</lc:X1>
 		<lc:Y1>30</lc:Y1>
 		<lc:X2>8</lc:X2>
 		<lc:Y2>31</lc:Y2>
@@ -45523,7 +45545,7 @@ gA==</lc:Data>
 	<lc:Wire>
 		<lc:WireId>56ac169c-536f-4cf1-9963-914d8eef42b8</lc:WireId>
 		<lc:LogicalCircuitId>553b0fda-d655-4e4c-a6a1-e86a0a9ce59c</lc:LogicalCircuitId>
-		<lc:X1>8</lc:X1>
+		<lc:X1>7</lc:X1>
 		<lc:Y1>35</lc:Y1>
 		<lc:X2>8</lc:X2>
 		<lc:Y2>36</lc:Y2>
@@ -45862,7 +45884,7 @@ gA==</lc:Data>
 		<lc:X1>16</lc:X1>
 		<lc:Y1>20</lc:Y1>
 		<lc:X2>16</lc:X2>
-		<lc:Y2>17</lc:Y2>
+		<lc:Y2>18</lc:Y2>
 	</lc:Wire>
 	<lc:Wire>
 		<lc:WireId>4c43e1b3-b385-4b96-bf74-36e2fa5b2cc6</lc:WireId>
@@ -45893,7 +45915,7 @@ gA==</lc:Data>
 		<lc:LogicalCircuitId>bcf77041-ecd8-4a96-b89a-1bad3cd349cb</lc:LogicalCircuitId>
 		<lc:X1>21</lc:X1>
 		<lc:Y1>19</lc:Y1>
-		<lc:X2>25</lc:X2>
+		<lc:X2>23</lc:X2>
 		<lc:Y2>19</lc:Y2>
 	</lc:Wire>
 	<lc:Wire>
@@ -46864,6 +46886,46 @@ gA==</lc:Data>
 		<lc:X2>83</lc:X2>
 		<lc:Y2>46</lc:Y2>
 	</lc:Wire>
+	<lc:Wire>
+		<lc:WireId>5f849dd8-2cee-4d80-b361-ab9829eddb0d</lc:WireId>
+		<lc:LogicalCircuitId>bcf77041-ecd8-4a96-b89a-1bad3cd349cb</lc:LogicalCircuitId>
+		<lc:X1>23</lc:X1>
+		<lc:Y1>17</lc:Y1>
+		<lc:X2>23</lc:X2>
+		<lc:Y2>19</lc:Y2>
+	</lc:Wire>
+	<lc:Wire>
+		<lc:WireId>91a558a8-7e6d-4f1b-8862-d0fa13acee2c</lc:WireId>
+		<lc:LogicalCircuitId>bcf77041-ecd8-4a96-b89a-1bad3cd349cb</lc:LogicalCircuitId>
+		<lc:X1>23</lc:X1>
+		<lc:Y1>19</lc:Y1>
+		<lc:X2>25</lc:X2>
+		<lc:Y2>19</lc:Y2>
+	</lc:Wire>
+	<lc:Wire>
+		<lc:WireId>48f4ccd9-a803-4f27-97dc-29870eca6000</lc:WireId>
+		<lc:LogicalCircuitId>bcf77041-ecd8-4a96-b89a-1bad3cd349cb</lc:LogicalCircuitId>
+		<lc:X1>15</lc:X1>
+		<lc:Y1>16</lc:Y1>
+		<lc:X2>15</lc:X2>
+		<lc:Y2>18</lc:Y2>
+	</lc:Wire>
+	<lc:Wire>
+		<lc:WireId>5cb5fc81-1704-4601-9e4a-b93951a82571</lc:WireId>
+		<lc:LogicalCircuitId>bcf77041-ecd8-4a96-b89a-1bad3cd349cb</lc:LogicalCircuitId>
+		<lc:X1>15</lc:X1>
+		<lc:Y1>18</lc:Y1>
+		<lc:X2>16</lc:X2>
+		<lc:Y2>18</lc:Y2>
+	</lc:Wire>
+	<lc:Wire>
+		<lc:WireId>26ab5d81-0e58-4d74-9917-e6b3f5242841</lc:WireId>
+		<lc:LogicalCircuitId>bcf77041-ecd8-4a96-b89a-1bad3cd349cb</lc:LogicalCircuitId>
+		<lc:X1>16</lc:X1>
+		<lc:Y1>18</lc:Y1>
+		<lc:X2>16</lc:X2>
+		<lc:Y2>17</lc:Y2>
+	</lc:Wire>
 	<lc:TextNote>
 		<lc:TextNoteId>d8e9ed5f-f95b-4edc-a784-980356ec568b</lc:TextNoteId>
 		<lc:LogicalCircuitId>17cb9f8b-5905-456e-a2f4-9204a8b65611</lc:LogicalCircuitId>
@@ -47392,7 +47454,7 @@ gA==</lc:Data>
 		<lc:Y>9</lc:Y>
 		<lc:Width>3</lc:Width>
 		<lc:Height>1</lc:Height>
-		<lc:Note>&lt;FlowDocument TextAlignment="Left" PagePadding="5,0,5,0" AllowDrop="True" NumberSubstitution.CultureSource="User" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"&gt;&lt;Paragraph&gt;&lt;Run FontWeight="Bold" xml:lang="zh-cn"&gt;MAR&lt;/Run&gt;&lt;/Paragraph&gt;&lt;/FlowDocument&gt;</lc:Note>
+		<lc:Note>&lt;FlowDocument TextAlignment="Left" PagePadding="5,0,5,0" AllowDrop="True" NumberSubstitution.CultureSource="User" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"&gt;&lt;Paragraph&gt;&lt;Run FontWeight="Bold" xml:lang="zh-cn"&gt;MDR&lt;/Run&gt;&lt;/Paragraph&gt;&lt;/FlowDocument&gt;</lc:Note>
 	</lc:TextNote>
 	<lc:TextNote>
 		<lc:TextNoteId>b18c9a39-5da0-4dfc-999d-2233254394fe</lc:TextNoteId>
@@ -47402,5 +47464,32 @@ gA==</lc:Data>
 		<lc:Width>3</lc:Width>
 		<lc:Height>1</lc:Height>
 		<lc:Note>&lt;FlowDocument TextAlignment="Left" PagePadding="5,0,5,0" AllowDrop="True" NumberSubstitution.CultureSource="User" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"&gt;&lt;Paragraph&gt;&lt;Run FontWeight="Bold" xml:lang="zh-cn"&gt;ES&lt;/Run&gt;&lt;/Paragraph&gt;&lt;/FlowDocument&gt;</lc:Note>
+	</lc:TextNote>
+	<lc:TextNote>
+		<lc:TextNoteId>5618dced-120e-4dbc-ab2c-2e83bfca5c1c</lc:TextNoteId>
+		<lc:LogicalCircuitId>553b0fda-d655-4e4c-a6a1-e86a0a9ce59c</lc:LogicalCircuitId>
+		<lc:X>13</lc:X>
+		<lc:Y>31</lc:Y>
+		<lc:Width>9</lc:Width>
+		<lc:Height>6</lc:Height>
+		<lc:Note>&lt;FlowDocument TextAlignment="Left" PagePadding="5,0,5,0" AllowDrop="True" NumberSubstitution.CultureSource="User" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"&gt;&lt;Paragraph&gt;&lt;Run xml:lang="zh-cn"&gt;该ROM用于控制PC的EN位，从而实现了重新计数和继续计数两种操作&lt;/Run&gt;&lt;/Paragraph&gt;&lt;Paragraph&gt;&lt;Run xml:lang="zh-cn" xml:space="preserve" /&gt;&lt;/Paragraph&gt;&lt;/FlowDocument&gt;</lc:Note>
+	</lc:TextNote>
+	<lc:TextNote>
+		<lc:TextNoteId>18f0489d-dcb6-43a8-863a-2ab10251e836</lc:TextNoteId>
+		<lc:LogicalCircuitId>f1ffcb37-89cf-47cc-90f2-3b19e280727e</lc:LogicalCircuitId>
+		<lc:X>21</lc:X>
+		<lc:Y>2</lc:Y>
+		<lc:Width>20</lc:Width>
+		<lc:Height>7</lc:Height>
+		<lc:Note>&lt;FlowDocument TextAlignment="Left" PagePadding="5,0,5,0" AllowDrop="True" NumberSubstitution.CultureSource="User" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"&gt;&lt;Paragraph&gt;&lt;Run xml:lang="zh-cn"&gt;该模块功能：&lt;/Run&gt;&lt;/Paragraph&gt;&lt;Paragraph&gt;&lt;Run xml:lang="zh-cn"&gt;(1) 通过5-32译码器控制寄存器的读写信号&lt;/Run&gt;&lt;/Paragraph&gt;&lt;Paragraph&gt;&lt;Run xml:lang="zh-cn"&gt;(2) 避免寄存器出现同时读写的情况，经过异或操作后的值控制着CS位信号&lt;/Run&gt;&lt;/Paragraph&gt;&lt;/FlowDocument&gt;</lc:Note>
+	</lc:TextNote>
+	<lc:TextNote>
+		<lc:TextNoteId>d2c02c90-bdec-436b-9ae8-a6d4e60c7112</lc:TextNoteId>
+		<lc:LogicalCircuitId>553b0fda-d655-4e4c-a6a1-e86a0a9ce59c</lc:LogicalCircuitId>
+		<lc:X>38</lc:X>
+		<lc:Y>11</lc:Y>
+		<lc:Width>14</lc:Width>
+		<lc:Height>4</lc:Height>
+		<lc:Note>&lt;FlowDocument TextAlignment="Left" PagePadding="5,0,5,0" AllowDrop="True" NumberSubstitution.CultureSource="User" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"&gt;&lt;Paragraph&gt;&lt;Run xml:lang="zh-cn"&gt;自15位开始控制PC，第15位控制PC的WE信号，第16位控制PC的CS信号，第17位控制PC的EN信号&lt;/Run&gt;&lt;/Paragraph&gt;&lt;/FlowDocument&gt;</lc:Note>
 	</lc:TextNote>
 </lc:CircuitProject>
