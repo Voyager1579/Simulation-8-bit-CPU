@@ -14,10 +14,11 @@ for addr in range(0x10000):
     psw = (addr >> 4) & 0xf
     cyc = addr & 0xf
 
+#   装载机器码
     if cyc < len(ASM.FETCH):
         micro[addr] = ASM.FETCH[cyc]
 
-with open(filename,'wb') as file:
+with open(filename, 'wb') as file:
     for var in micro :
         value = var.to_bytes(4, byteorder = 'little')
         file.write(value)

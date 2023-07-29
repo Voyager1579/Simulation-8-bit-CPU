@@ -3,7 +3,7 @@
 	<lc:Project>
 		<lc:ProjectId>6caad03a-b7a2-42b1-8489-fb2f8caaa2d3</lc:ProjectId>
 		<lc:Name>8bitCpu</lc:Name>
-		<lc:Zoom>1.1624719101123562</lc:Zoom>
+		<lc:Zoom>0.7624719101123562</lc:Zoom>
 		<lc:Frequency>1</lc:Frequency>
 		<lc:LogicalCircuitId>bcf77041-ecd8-4a96-b89a-1bad3cd349cb</lc:LogicalCircuitId>
 	</lc:Project>
@@ -47468,10 +47468,10 @@ gA==</lc:Data>
 	<lc:TextNote>
 		<lc:TextNoteId>5618dced-120e-4dbc-ab2c-2e83bfca5c1c</lc:TextNoteId>
 		<lc:LogicalCircuitId>553b0fda-d655-4e4c-a6a1-e86a0a9ce59c</lc:LogicalCircuitId>
-		<lc:X>13</lc:X>
+		<lc:X>11</lc:X>
 		<lc:Y>31</lc:Y>
-		<lc:Width>9</lc:Width>
-		<lc:Height>6</lc:Height>
+		<lc:Width>12</lc:Width>
+		<lc:Height>8</lc:Height>
 		<lc:Note>&lt;FlowDocument TextAlignment="Left" PagePadding="5,0,5,0" AllowDrop="True" NumberSubstitution.CultureSource="User" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"&gt;&lt;Paragraph&gt;&lt;Run xml:lang="zh-cn"&gt;该ROM用于控制PC的EN位，从而实现了重新计数和继续计数两种操作&lt;/Run&gt;&lt;/Paragraph&gt;&lt;Paragraph&gt;&lt;Run xml:lang="zh-cn" xml:space="preserve" /&gt;&lt;/Paragraph&gt;&lt;/FlowDocument&gt;</lc:Note>
 	</lc:TextNote>
 	<lc:TextNote>
@@ -47491,5 +47491,14 @@ gA==</lc:Data>
 		<lc:Width>14</lc:Width>
 		<lc:Height>4</lc:Height>
 		<lc:Note>&lt;FlowDocument TextAlignment="Left" PagePadding="5,0,5,0" AllowDrop="True" NumberSubstitution.CultureSource="User" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"&gt;&lt;Paragraph&gt;&lt;Run xml:lang="zh-cn"&gt;自15位开始控制PC，第15位控制PC的WE信号，第16位控制PC的CS信号，第17位控制PC的EN信号&lt;/Run&gt;&lt;/Paragraph&gt;&lt;/FlowDocument&gt;</lc:Note>
+	</lc:TextNote>
+	<lc:TextNote>
+		<lc:TextNoteId>f1c33b6e-43fb-41df-87f7-9b8e97bb5d79</lc:TextNoteId>
+		<lc:LogicalCircuitId>bcf77041-ecd8-4a96-b89a-1bad3cd349cb</lc:LogicalCircuitId>
+		<lc:X>36</lc:X>
+		<lc:Y>28</lc:Y>
+		<lc:Width>25</lc:Width>
+		<lc:Height>7</lc:Height>
+		<lc:Note>&lt;FlowDocument TextAlignment="Left" PagePadding="5,0,5,0" AllowDrop="True" NumberSubstitution.CultureSource="User" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"&gt;&lt;Paragraph&gt;&lt;Run xml:lang="zh-cn"&gt;该ROM采用十六进制&lt;/Run&gt;&lt;/Paragraph&gt;&lt;Paragraph&gt;&lt;Run xml:lang="zh-cn"&gt;第一位记录程序CYC&lt;/Run&gt;&lt;/Paragraph&gt;&lt;Paragraph&gt;&lt;Run xml:lang="zh-cn"&gt;第二位记录程序状态字&lt;/Run&gt;&lt;/Paragraph&gt;&lt;Paragraph&gt;&lt;Run xml:lang="zh-cn"&gt;第三位记录l1的数值&lt;/Run&gt;&lt;/Paragraph&gt;&lt;/FlowDocument&gt;</lc:Note>
 	</lc:TextNote>
 </lc:CircuitProject>
