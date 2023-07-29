@@ -1,30 +1,30 @@
 # coding = utf-8
 
 # 管脚对应着电位信号,_OUT后缀为读信号，_IN后缀为写信号
-MSR = 1
-MAR = 2
-MDR = 3
-RAM = 4
-IR = 5
-DST = 6
-SRC = 7
+MSR = 1 # 机器状态寄存器
+MAR = 2 # 内存地址寄存器
+MDR = 3 # 内存数据寄存器
+RAM = 4 # 随机访问存储器
+IR = 5 # 指令寄存器
+DST = 6 # 目标寄存器
+SRC = 7 # 源寄存器
 
 A = 8
 B = 9
 C = 10
 D = 11
-DI = 12
-SI = 13
-SP = 14
+DI = 12 # 目标索引寄存器
+SI = 13 # 源索引寄存器
+SP = 14 # 堆栈指针
 
-BP = 15
-CS = 16
-DS = 17
-SS = 18
-ES = 19
-VEC = 20
-T1 = 21
-T2 = 22
+BP = 15 # 基址指针
+CS = 16 # 代码段寄存器
+DS = 17 # 数据段寄存器
+SS = 18 # 堆栈段寄存器
+ES = 19 # 附加段寄存器
+VEC = 20 # 向量寄存器
+T1 = 21 # 临时寄存器1
+T2 = 22 # 临时寄存器2
 
 MSR_OUT = MSR 
 MAR_OUT = MAR 
@@ -92,4 +92,16 @@ PC_OUT = PC_CS
 PC_IN = PC_CS | PC_WE
 PC_INC = PC_CS | PC_WE | PC_EN
 
+CYC = 2 ** 30
 HLT = 2 ** 31
+
+ADDR2 = 1 << 7
+ADDR1 = 1 << 6
+
+ADDR2_SHIFT = 4
+ADDR1_SHIFT = 2
+
+AM_INS = 0
+AM_REG = 1
+AM_DIR = 2
+AM_RAM = 3
