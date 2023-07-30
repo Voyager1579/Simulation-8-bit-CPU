@@ -14,14 +14,14 @@ FETCH = [
 MOV = 0 | pin.ADDR2
 ADD = (1 << pin.ADDR2_SHIFT) | pin.ADDR2
 
-NOT = 0
+NOP = 0
 HLT = 0x3f
 
 #定义字典,遵从Key-Value原则
 INSTRUCTIONS = {
     2: {
         MOV: {
-            (pin.AM_REG, pin.AM_INS) : [
+            (pin.AM_REG, pin.AM_INS): [
                 pin.DST_W | pin.SRC_OUT,
             ]
         }

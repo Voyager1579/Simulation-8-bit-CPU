@@ -4,13 +4,14 @@ import os
 import pin
 import assembly as ASM
 
+# 三十二位的指令系统，通过十六进制表达指令信号
 dirname = os.path.dirname(__file__)
 filename = os.path.join(dirname, 'micro.bin')
 
 # 初始化微指令内容，全部置暂停
 micro = [pin.HLT for _ in range(0x10000)]
 
-
+# 编译二地址指令函数
 def compile_addr2(addr, ir, psw, index):
     global micro
 
@@ -38,6 +39,7 @@ def compile_addr1(addr, ir, psw, index):
     pass
 
 
+# 编译零地址指令函数
 def compile_addr0(addr, ir, psw, index):
     global micro
 
