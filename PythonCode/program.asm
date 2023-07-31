@@ -1,4 +1,4 @@
-MOV A, 5; this is annotation
+MOV A, 5 ;this is annotation
 
 MOV A, 5
 

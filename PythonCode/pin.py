@@ -78,12 +78,12 @@ VEC_IN = VEC << _DST_SHIFT
 T1_IN = T1 << _DST_SHIFT
 T2_IN = T2 << _DST_SHIFT
 
-SRC_R = 2 ** 10
+SRC_R = 2 ** 10 # 源寄存器
 SRC_W = 2 ** 11
-DST_R = 2 ** 12
+DST_R = 2 ** 12 # 目标寄存器
 DST_W = 2 ** 13
 
-PC_WE = 2 ** 14
+PC_WE = 2 ** 14 # 程序计数器
 PC_CS = 2 ** 15
 PC_EN = 2 ** 16
 

@@ -3,9 +3,9 @@
 	<lc:Project>
 		<lc:ProjectId>6caad03a-b7a2-42b1-8489-fb2f8caaa2d3</lc:ProjectId>
 		<lc:Name>8bitCpu</lc:Name>
-		<lc:Zoom>1.2624719101123563</lc:Zoom>
+		<lc:Zoom>1.062471910112356</lc:Zoom>
 		<lc:Frequency>1</lc:Frequency>
-		<lc:LogicalCircuitId>553b0fda-d655-4e4c-a6a1-e86a0a9ce59c</lc:LogicalCircuitId>
+		<lc:LogicalCircuitId>15e2046e-b2d4-4a43-89ff-b429de5bab9a</lc:LogicalCircuitId>
 	</lc:Project>
 	<lc:LogicalCircuit>
 		<lc:LogicalCircuitId>3ee05d2e-3d1e-4db6-b01f-a072acc8c999</lc:LogicalCircuitId>
@@ -3657,7 +3657,7 @@ ABAAAAAgAAAAQAAAAIA=</lc:Data>
 		<lc:OnStart>Data</lc:OnStart>
 		<lc:AddressBitWidth>16</lc:AddressBitWidth>
 		<lc:DataBitWidth>8</lc:DataBitWidth>
-		<lc:Data>AwQFAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+		<lc:Data>hAgFhAgFhAkKhAoLhAgwhAswPwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
@@ -47468,11 +47468,11 @@ gA==</lc:Data>
 	<lc:TextNote>
 		<lc:TextNoteId>5618dced-120e-4dbc-ab2c-2e83bfca5c1c</lc:TextNoteId>
 		<lc:LogicalCircuitId>553b0fda-d655-4e4c-a6a1-e86a0a9ce59c</lc:LogicalCircuitId>
-		<lc:X>11</lc:X>
-		<lc:Y>31</lc:Y>
-		<lc:Width>12</lc:Width>
-		<lc:Height>8</lc:Height>
-		<lc:Note>&lt;FlowDocument TextAlignment="Left" PagePadding="5,0,5,0" AllowDrop="True" NumberSubstitution.CultureSource="User" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"&gt;&lt;Paragraph&gt;&lt;Run xml:lang="zh-cn"&gt;该ROM用于控制PC的EN位，从而实现了重新计数和继续计数两种操作&lt;/Run&gt;&lt;/Paragraph&gt;&lt;Paragraph&gt;&lt;Run xml:lang="zh-cn" xml:space="preserve" /&gt;&lt;/Paragraph&gt;&lt;/FlowDocument&gt;</lc:Note>
+		<lc:X>2</lc:X>
+		<lc:Y>6</lc:Y>
+		<lc:Width>21</lc:Width>
+		<lc:Height>9</lc:Height>
+		<lc:Note>&lt;FlowDocument TextAlignment="Left" PagePadding="5,0,5,0" AllowDrop="True" NumberSubstitution.CultureSource="User" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"&gt;&lt;Paragraph&gt;&lt;Run xml:lang="zh-cn"&gt;该ROM用于控制PC的EN位，从而实现了重新计数和继续计数两种操作&lt;/Run&gt;&lt;/Paragraph&gt;&lt;Paragraph&gt;&lt;Run xml:lang="zh-cn"&gt;PC的输出数据采用十六进制，其中&lt;/Run&gt;&lt;/Paragraph&gt;&lt;Paragraph&gt;&lt;Run xml:lang="zh-cn"&gt;第一位记录程序CYC&lt;/Run&gt;&lt;/Paragraph&gt;&lt;Paragraph&gt;&lt;Run xml:lang="zh-cn"&gt;第二位记录程序状态字&lt;/Run&gt;&lt;/Paragraph&gt;&lt;Paragraph&gt;&lt;Run xml:lang="zh-cn"&gt;第三位记录l1的数值&lt;/Run&gt;&lt;/Paragraph&gt;&lt;/FlowDocument&gt;</lc:Note>
 	</lc:TextNote>
 	<lc:TextNote>
 		<lc:TextNoteId>18f0489d-dcb6-43a8-863a-2ab10251e836</lc:TextNoteId>
@@ -47493,12 +47493,20 @@ gA==</lc:Data>
 		<lc:Note>&lt;FlowDocument TextAlignment="Left" PagePadding="5,0,5,0" AllowDrop="True" NumberSubstitution.CultureSource="User" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"&gt;&lt;Paragraph&gt;&lt;Run xml:lang="zh-cn"&gt;自15位开始控制PC，第15位控制PC的WE信号，第16位控制PC的CS信号，第17位控制PC的EN信号&lt;/Run&gt;&lt;/Paragraph&gt;&lt;/FlowDocument&gt;</lc:Note>
 	</lc:TextNote>
 	<lc:TextNote>
-		<lc:TextNoteId>f1c33b6e-43fb-41df-87f7-9b8e97bb5d79</lc:TextNoteId>
+		<lc:TextNoteId>d970f9cc-e1fe-4bb6-9236-14d8f1fce218</lc:TextNoteId>
+		<lc:LogicalCircuitId>15e2046e-b2d4-4a43-89ff-b429de5bab9a</lc:LogicalCircuitId>
+		<lc:X>12</lc:X>
+		<lc:Y>6</lc:Y>
+		<lc:Width>14</lc:Width>
+		<lc:Height>8</lc:Height>
+		<lc:Note>&lt;FlowDocument TextAlignment="Left" PagePadding="5,0,5,0" AllowDrop="True" NumberSubstitution.CultureSource="User" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"&gt;&lt;Paragraph&gt;&lt;Run xml:lang="zh-cn"&gt;该读写控制器控制着寄存器们的读写信号&lt;/Run&gt;&lt;/Paragraph&gt;&lt;/FlowDocument&gt;</lc:Note>
+	</lc:TextNote>
+	<lc:TextNote>
+		<lc:TextNoteId>7991184c-76df-41c8-9c98-55bc618cf0cb</lc:TextNoteId>
 		<lc:LogicalCircuitId>bcf77041-ecd8-4a96-b89a-1bad3cd349cb</lc:LogicalCircuitId>
-		<lc:X>36</lc:X>
-		<lc:Y>28</lc:Y>
-		<lc:Width>25</lc:Width>
-		<lc:Height>7</lc:Height>
-		<lc:Note>&lt;FlowDocument TextAlignment="Left" PagePadding="5,0,5,0" AllowDrop="True" NumberSubstitution.CultureSource="User" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"&gt;&lt;Paragraph&gt;&lt;Run xml:lang="zh-cn"&gt;该ROM采用十六进制&lt;/Run&gt;&lt;/Paragraph&gt;&lt;Paragraph&gt;&lt;Run xml:lang="zh-cn"&gt;第一位记录程序CYC&lt;/Run&gt;&lt;/Paragraph&gt;&lt;Paragraph&gt;&lt;Run xml:lang="zh-cn"&gt;第二位记录程序状态字&lt;/Run&gt;&lt;/Paragraph&gt;&lt;Paragraph&gt;&lt;Run xml:lang="zh-cn"&gt;第三位记录l1的数值&lt;/Run&gt;&lt;/Paragraph&gt;&lt;/FlowDocument&gt;</lc:Note>
+		<lc:X>35</lc:X>
+		<lc:Y>27</lc:Y>
+		<lc:Width>42</lc:Width>
+		<lc:Note>&lt;FlowDocument TextAlignment="Left" PagePadding="5,0,5,0" AllowDrop="True" NumberSubstitution.CultureSource="User" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"&gt;&lt;Paragraph&gt;&lt;Run xml:lang="zh-cn"&gt;该ROM输入16(bin)\4(hex)位，输出32(bin)\8(hex)位&lt;/Run&gt;&lt;/Paragraph&gt;&lt;Paragraph&gt;&lt;Run xml:lang="zh-cn"&gt;输入a中，(hex)第一二位为，第三位为程序状态字，第四位为CYC循环周期数&lt;/Run&gt;&lt;/Paragraph&gt;&lt;Paragraph&gt;&lt;Run xml:lang="zh-cn"&gt;输出d中，第一位控制程序是否停止，第二位控制CPU内部程序计数器是否重置&lt;/Run&gt;&lt;/Paragraph&gt;&lt;Paragraph Margin="40,Auto,Auto,Auto"&gt;&lt;Run xml:lang="zh-cn" xml:space="preserve"&gt;       第九位到第十二位控制ALU，第十三位到第十五位控制ALU运算信号&lt;/Run&gt;&lt;/Paragraph&gt;&lt;Paragraph Margin="40,Auto,Auto,Auto"&gt;&lt;Run xml:lang="zh-cn" xml:space="preserve"&gt;       第十六位到第十八位控制外部程序计数器读写，后十四位控制寄存器读写状态&lt;/Run&gt;&lt;/Paragraph&gt;&lt;Paragraph&gt;&lt;Run xml:lang="zh-cn" xml:space="preserve" /&gt;&lt;/Paragraph&gt;&lt;/FlowDocument&gt;</lc:Note>
 	</lc:TextNote>
 </lc:CircuitProject>
