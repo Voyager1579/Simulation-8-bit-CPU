@@ -95,12 +95,13 @@ PC_INC = PC_CS | PC_WE | PC_EN
 CYC = 2 ** 30
 HLT = 2 ** 31
 
+# 定义地址指令信号
 ADDR2 = 1 << 7
 ADDR1 = 1 << 6
-
+# 定义偏移量
 ADDR2_SHIFT = 4
 ADDR1_SHIFT = 2
-
+# 从上到下分别为：立即寻址信号，寄存器寻址信号，直接寻址信号，寄存器间接寻址信号
 AM_INS = 0
 AM_REG = 1
 AM_DIR = 2
