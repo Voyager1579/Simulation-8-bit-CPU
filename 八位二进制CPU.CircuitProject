@@ -5,7 +5,7 @@
 		<lc:Name>8bitCpu</lc:Name>
 		<lc:Zoom>1.062471910112356</lc:Zoom>
 		<lc:Frequency>1</lc:Frequency>
-		<lc:LogicalCircuitId>f1ffcb37-89cf-47cc-90f2-3b19e280727e</lc:LogicalCircuitId>
+		<lc:LogicalCircuitId>bcf77041-ecd8-4a96-b89a-1bad3cd349cb</lc:LogicalCircuitId>
 	</lc:Project>
 	<lc:LogicalCircuit>
 		<lc:LogicalCircuitId>3ee05d2e-3d1e-4db6-b01f-a072acc8c999</lc:LogicalCircuitId>
@@ -47472,7 +47472,7 @@ gA==</lc:Data>
 		<lc:Y>6</lc:Y>
 		<lc:Width>21</lc:Width>
 		<lc:Height>9</lc:Height>
-		<lc:Note>&lt;FlowDocument TextAlignment="Left" PagePadding="5,0,5,0" AllowDrop="True" NumberSubstitution.CultureSource="User" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"&gt;&lt;Paragraph&gt;&lt;Run xml:lang="zh-cn"&gt;该ROM用于控制PC的EN位，从而实现了重新计数和继续计数两种操作&lt;/Run&gt;&lt;/Paragraph&gt;&lt;Paragraph&gt;&lt;Run xml:lang="zh-cn"&gt;PC的输出数据采用十六进制，其中&lt;/Run&gt;&lt;/Paragraph&gt;&lt;Paragraph&gt;&lt;Run xml:lang="zh-cn"&gt;第一位记录程序CYC&lt;/Run&gt;&lt;/Paragraph&gt;&lt;Paragraph&gt;&lt;Run xml:lang="zh-cn"&gt;第二位记录程序状态字&lt;/Run&gt;&lt;/Paragraph&gt;&lt;Paragraph&gt;&lt;Run xml:lang="zh-cn"&gt;第三位记录l1的数值&lt;/Run&gt;&lt;/Paragraph&gt;&lt;/FlowDocument&gt;</lc:Note>
+		<lc:Note>&lt;FlowDocument TextAlignment="Left" PagePadding="5,0,5,0" AllowDrop="True" NumberSubstitution.CultureSource="User" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"&gt;&lt;Paragraph&gt;&lt;Run xml:lang="zh-cn"&gt;该ROM用于控制PC的EN位，从而实现了重新计数和继续计数两种操作&lt;/Run&gt;&lt;/Paragraph&gt;&lt;Paragraph&gt;&lt;Run xml:lang="zh-cn"&gt;PC的输出数据采用十六进制，其中&lt;/Run&gt;&lt;/Paragraph&gt;&lt;Paragraph&gt;&lt;Run xml:lang="zh-cn"&gt;第四位记录程序CYC&lt;/Run&gt;&lt;/Paragraph&gt;&lt;Paragraph&gt;&lt;Run xml:lang="zh-cn"&gt;第三位记录程序状态字&lt;/Run&gt;&lt;/Paragraph&gt;&lt;Paragraph&gt;&lt;Run xml:lang="zh-cn"&gt;第一、二位记录指令寄存器的数值&lt;/Run&gt;&lt;/Paragraph&gt;&lt;/FlowDocument&gt;</lc:Note>
 	</lc:TextNote>
 	<lc:TextNote>
 		<lc:TextNoteId>18f0489d-dcb6-43a8-863a-2ab10251e836</lc:TextNoteId>
@@ -47495,18 +47495,19 @@ gA==</lc:Data>
 	<lc:TextNote>
 		<lc:TextNoteId>d970f9cc-e1fe-4bb6-9236-14d8f1fce218</lc:TextNoteId>
 		<lc:LogicalCircuitId>15e2046e-b2d4-4a43-89ff-b429de5bab9a</lc:LogicalCircuitId>
-		<lc:X>12</lc:X>
-		<lc:Y>6</lc:Y>
+		<lc:X>43</lc:X>
+		<lc:Y>11</lc:Y>
 		<lc:Width>14</lc:Width>
 		<lc:Height>8</lc:Height>
-		<lc:Note>&lt;FlowDocument TextAlignment="Left" PagePadding="5,0,5,0" AllowDrop="True" NumberSubstitution.CultureSource="User" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"&gt;&lt;Paragraph&gt;&lt;Run xml:lang="zh-cn"&gt;该读写控制器控制着寄存器们的读写信号&lt;/Run&gt;&lt;/Paragraph&gt;&lt;/FlowDocument&gt;</lc:Note>
+		<lc:Note>&lt;FlowDocument TextAlignment="Left" PagePadding="5,0,5,0" AllowDrop="True" NumberSubstitution.CultureSource="User" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"&gt;&lt;Paragraph&gt;&lt;Run xml:lang="zh-cn"&gt;该读写控制器控制着寄存器们的读写信号&lt;/Run&gt;&lt;/Paragraph&gt;&lt;Paragraph&gt;&lt;Run xml:lang="zh-cn"&gt;D的数据来自于目标寄存器&lt;/Run&gt;&lt;/Paragraph&gt;&lt;Paragraph&gt;&lt;Run xml:lang="zh-cn"&gt;S的数据来自于源寄存器&lt;/Run&gt;&lt;/Paragraph&gt;&lt;/FlowDocument&gt;</lc:Note>
 	</lc:TextNote>
 	<lc:TextNote>
 		<lc:TextNoteId>7991184c-76df-41c8-9c98-55bc618cf0cb</lc:TextNoteId>
 		<lc:LogicalCircuitId>bcf77041-ecd8-4a96-b89a-1bad3cd349cb</lc:LogicalCircuitId>
 		<lc:X>35</lc:X>
 		<lc:Y>27</lc:Y>
-		<lc:Width>42</lc:Width>
-		<lc:Note>&lt;FlowDocument TextAlignment="Left" PagePadding="5,0,5,0" AllowDrop="True" NumberSubstitution.CultureSource="User" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"&gt;&lt;Paragraph&gt;&lt;Run xml:lang="zh-cn"&gt;该ROM输入16(bin)\4(hex)位，输出32(bin)\8(hex)位&lt;/Run&gt;&lt;/Paragraph&gt;&lt;Paragraph&gt;&lt;Run xml:lang="zh-cn"&gt;输入a中，(hex)第一二位为，第三位为程序状态字，第四位为CYC循环周期数&lt;/Run&gt;&lt;/Paragraph&gt;&lt;Paragraph&gt;&lt;Run xml:lang="zh-cn"&gt;输出d中，第一位控制程序是否停止，第二位控制CPU内部程序计数器是否重置&lt;/Run&gt;&lt;/Paragraph&gt;&lt;Paragraph Margin="40,Auto,Auto,Auto"&gt;&lt;Run xml:lang="zh-cn" xml:space="preserve"&gt;       第九位到第十二位控制ALU，第十三位到第十五位控制ALU运算信号&lt;/Run&gt;&lt;/Paragraph&gt;&lt;Paragraph Margin="40,Auto,Auto,Auto"&gt;&lt;Run xml:lang="zh-cn" xml:space="preserve"&gt;       第十六位到第十八位控制外部程序计数器读写，后十四位控制寄存器读写状态&lt;/Run&gt;&lt;/Paragraph&gt;&lt;Paragraph&gt;&lt;Run xml:lang="zh-cn" xml:space="preserve" /&gt;&lt;/Paragraph&gt;&lt;/FlowDocument&gt;</lc:Note>
+		<lc:Width>43</lc:Width>
+		<lc:Height>11</lc:Height>
+		<lc:Note>&lt;FlowDocument TextAlignment="Left" PagePadding="5,0,5,0" AllowDrop="True" NumberSubstitution.CultureSource="User" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"&gt;&lt;Paragraph&gt;&lt;Run xml:lang="zh-cn"&gt;该ROM输入16(bin)\4(hex)位，输出32(bin)\8(hex)位&lt;/Run&gt;&lt;/Paragraph&gt;&lt;Paragraph&gt;&lt;Run xml:lang="zh-cn"&gt;输入a中，(hex)第一二位为指令寄存器输出值，第三位为程序状态字，第四位为CYC循环周期数&lt;/Run&gt;&lt;/Paragraph&gt;&lt;Paragraph&gt;&lt;Run xml:lang="zh-cn"&gt;输出d中，第一位控制程序是否停止，第二位控制CPU内部程序计数器是否重置&lt;/Run&gt;&lt;/Paragraph&gt;&lt;Paragraph Margin="40,Auto,Auto,Auto"&gt;&lt;Run xml:lang="zh-cn" xml:space="preserve"&gt;       第九位到第十二位控制ALU，第十三位到第十五位控制ALU运算信号&lt;/Run&gt;&lt;/Paragraph&gt;&lt;Paragraph Margin="40,Auto,Auto,Auto"&gt;&lt;Run xml:lang="zh-cn" xml:space="preserve"&gt;       第十六位到第十八位控制外部程序计数器读写，后十四位控制寄存器读写状态，其中第十一位到第十四位控制目标寄存器和源寄存器的读写&lt;/Run&gt;&lt;/Paragraph&gt;&lt;Paragraph&gt;&lt;Run xml:lang="zh-cn" xml:space="preserve" /&gt;&lt;/Paragraph&gt;&lt;/FlowDocument&gt;</lc:Note>
 	</lc:TextNote>
 </lc:CircuitProject>

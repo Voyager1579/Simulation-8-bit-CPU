@@ -80,6 +80,7 @@ T2_IN = T2 << _DST_SHIFT
 
 SRC_R = 2 ** 10 # 源寄存器
 SRC_W = 2 ** 11
+
 DST_R = 2 ** 12 # 目标寄存器
 DST_W = 2 ** 13
 
