@@ -15,20 +15,27 @@ micro = [pin.HLT for _ in range(0x10000)]
 def compile_addr2(addr, ir, psw, index):
     global micro
 
+    # 指令前四位为操作信号
     op = ir & 0xf0
+    # 二地址指令中，第五到第六位为目标寄存器
     amd = (ir >> 2) & 3
+    # 二地址指令中，第七到第八位为源（立即数，寄存器中的数据，寄存器直接地址，寄存器间接地址）
     ams = ir & 3
 
     INST = ASM.INSTRUCTIONS[2]
+    # 查找是否存在这样的二地址操作
     if op not in INST:
         micro[addr] = pin.CYC
         return
     am = (amd, ams)
+    # 查找是否存在这样的二地址操作数值key
     if am not in INST[op]:
         micro[addr] = pin.CYC
         return
 
+    # 获取执行机器码(微指令)
     EXEC = INST[op][am]
+
     if index < len(EXEC):
         micro[addr] = EXEC[index]
     else:

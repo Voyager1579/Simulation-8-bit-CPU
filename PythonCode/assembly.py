@@ -17,11 +17,14 @@ ADD = (1 << pin.ADDR2_SHIFT) | pin.ADDR2
 NOP = 0
 HLT = 0x3f
 
-#定义字典,遵从Key-Value原则
+#定义指令字典,遵从Key-Value原则
 INSTRUCTIONS = {
     2: {
+        # 为Mov指令时
         MOV: {
+            #为立即数Mov时，key为立即数传值(1,0)时
             (pin.AM_REG, pin.AM_INS): [
+                # 将源寄存器中的数写入目标寄存器
                 pin.DST_W | pin.SRC_OUT,
             ]
         }
@@ -37,4 +40,6 @@ INSTRUCTIONS = {
     }
 }
 
-print(bin(MOV))
+INST = INSTRUCTIONS[2]
+print()
+print(len(INST[MOV][1,0]))

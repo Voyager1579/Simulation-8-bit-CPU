@@ -91,6 +91,7 @@ PC_EN = 2 ** 16
 # 直接为PC设置操作信号
 PC_OUT = PC_CS
 PC_IN = PC_CS | PC_WE
+# INC为自增命令increment
 PC_INC = PC_CS | PC_WE | PC_EN
 
 CYC = 2 ** 30
@@ -102,7 +103,7 @@ ADDR1 = 1 << 6
 # 定义偏移量
 ADDR2_SHIFT = 4
 ADDR1_SHIFT = 2
-# 从上到下分别为：立即寻址信号，寄存器寻址信号，直接寻址信号，寄存器间接寻址信号
+# 从上到下分别为：立即数信号，寄存器寻址信号，直接寻址信号，寄存器间接寻址信号
 AM_INS = 0
 AM_REG = 1
 AM_DIR = 2
