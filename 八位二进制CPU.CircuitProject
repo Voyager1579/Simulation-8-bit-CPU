@@ -3,7 +3,7 @@
 	<lc:Project>
 		<lc:ProjectId>6caad03a-b7a2-42b1-8489-fb2f8caaa2d3</lc:ProjectId>
 		<lc:Name>8bitCpu</lc:Name>
-		<lc:Zoom>0.9624719101123561</lc:Zoom>
+		<lc:Zoom>0.8624719101123561</lc:Zoom>
 		<lc:Frequency>1</lc:Frequency>
 		<lc:LogicalCircuitId>bcf77041-ecd8-4a96-b89a-1bad3cd349cb</lc:LogicalCircuitId>
 	</lc:Project>
@@ -3054,6 +3054,18 @@
 	<lc:CircuitProbe>
 		<lc:CircuitProbeId>413f4dfc-594a-4884-a5ce-d472409801ae</lc:CircuitProbeId>
 		<lc:Name>413f4dfc-594a-4884-a5ce-d472409801ae</lc:Name>
+	</lc:CircuitProbe>
+	<lc:CircuitProbe>
+		<lc:CircuitProbeId>36ed5e9c-b7fd-420a-a364-b7b14070e485</lc:CircuitProbeId>
+		<lc:Name>36ed5e9c-b7fd-420a-a364-b7b14070e485</lc:Name>
+	</lc:CircuitProbe>
+	<lc:CircuitProbe>
+		<lc:CircuitProbeId>5fc07449-0397-4b1b-8cfa-aea65fcae57a</lc:CircuitProbeId>
+		<lc:Name>5fc07449-0397-4b1b-8cfa-aea65fcae57a</lc:Name>
+	</lc:CircuitProbe>
+	<lc:CircuitProbe>
+		<lc:CircuitProbeId>89df484e-64f9-4a4c-b195-4844a0981c91</lc:CircuitProbeId>
+		<lc:Name>89df484e-64f9-4a4c-b195-4844a0981c91</lc:Name>
 	</lc:CircuitProbe>
 	<lc:Constant>
 		<lc:ConstantId>70c7f8b0-0800-4792-947a-50a354afe33b</lc:ConstantId>
@@ -18685,6 +18697,27 @@ QA==</lc:Data>
 		<lc:LogicalCircuitId>bcf77041-ecd8-4a96-b89a-1bad3cd349cb</lc:LogicalCircuitId>
 		<lc:X>15</lc:X>
 		<lc:Y>15</lc:Y>
+	</lc:CircuitSymbol>
+	<lc:CircuitSymbol>
+		<lc:CircuitSymbolId>a12fb2ed-de0a-4593-bf86-8cc3c829fed5</lc:CircuitSymbolId>
+		<lc:CircuitId>36ed5e9c-b7fd-420a-a364-b7b14070e485</lc:CircuitId>
+		<lc:LogicalCircuitId>bcf77041-ecd8-4a96-b89a-1bad3cd349cb</lc:LogicalCircuitId>
+		<lc:X>15</lc:X>
+		<lc:Y>22</lc:Y>
+	</lc:CircuitSymbol>
+	<lc:CircuitSymbol>
+		<lc:CircuitSymbolId>bd2533e1-dbd4-4ad1-b564-e72afab89ce5</lc:CircuitSymbolId>
+		<lc:CircuitId>5fc07449-0397-4b1b-8cfa-aea65fcae57a</lc:CircuitId>
+		<lc:LogicalCircuitId>bcf77041-ecd8-4a96-b89a-1bad3cd349cb</lc:LogicalCircuitId>
+		<lc:X>70</lc:X>
+		<lc:Y>11</lc:Y>
+	</lc:CircuitSymbol>
+	<lc:CircuitSymbol>
+		<lc:CircuitSymbolId>5a328790-b0a8-4031-8af4-be0b71b72545</lc:CircuitSymbolId>
+		<lc:CircuitId>89df484e-64f9-4a4c-b195-4844a0981c91</lc:CircuitId>
+		<lc:LogicalCircuitId>bcf77041-ecd8-4a96-b89a-1bad3cd349cb</lc:LogicalCircuitId>
+		<lc:X>14</lc:X>
+		<lc:Y>31</lc:Y>
 	</lc:CircuitSymbol>
 	<lc:Wire>
 		<lc:WireId>f515bbe2-65ce-42a2-90c5-77c0b2a2ca68</lc:WireId>
@@ -45779,7 +45812,7 @@ QA==</lc:Data>
 		<lc:LogicalCircuitId>bcf77041-ecd8-4a96-b89a-1bad3cd349cb</lc:LogicalCircuitId>
 		<lc:X1>14</lc:X1>
 		<lc:Y1>23</lc:Y1>
-		<lc:X2>25</lc:X2>
+		<lc:X2>15</lc:X2>
 		<lc:Y2>23</lc:Y2>
 	</lc:Wire>
 	<lc:Wire>
@@ -45835,7 +45868,7 @@ QA==</lc:Data>
 		<lc:LogicalCircuitId>bcf77041-ecd8-4a96-b89a-1bad3cd349cb</lc:LogicalCircuitId>
 		<lc:X1>16</lc:X1>
 		<lc:Y1>32</lc:Y1>
-		<lc:X2>13</lc:X2>
+		<lc:X2>14</lc:X2>
 		<lc:Y2>32</lc:Y2>
 	</lc:Wire>
 	<lc:Wire>
@@ -46260,7 +46293,7 @@ QA==</lc:Data>
 		<lc:X1>70</lc:X1>
 		<lc:Y1>13</lc:Y1>
 		<lc:X2>70</lc:X2>
-		<lc:Y2>11</lc:Y2>
+		<lc:Y2>12</lc:Y2>
 	</lc:Wire>
 	<lc:Wire>
 		<lc:WireId>5ff84e91-25f3-43be-b823-6df995179ea6</lc:WireId>
@@ -46926,6 +46959,30 @@ QA==</lc:Data>
 		<lc:X2>16</lc:X2>
 		<lc:Y2>17</lc:Y2>
 	</lc:Wire>
+	<lc:Wire>
+		<lc:WireId>e99874c7-443f-4f75-abb2-25e477bb940d</lc:WireId>
+		<lc:LogicalCircuitId>bcf77041-ecd8-4a96-b89a-1bad3cd349cb</lc:LogicalCircuitId>
+		<lc:X1>15</lc:X1>
+		<lc:Y1>23</lc:Y1>
+		<lc:X2>25</lc:X2>
+		<lc:Y2>23</lc:Y2>
+	</lc:Wire>
+	<lc:Wire>
+		<lc:WireId>8136a487-e22a-4378-b24b-3b7c51e47927</lc:WireId>
+		<lc:LogicalCircuitId>bcf77041-ecd8-4a96-b89a-1bad3cd349cb</lc:LogicalCircuitId>
+		<lc:X1>70</lc:X1>
+		<lc:Y1>12</lc:Y1>
+		<lc:X2>70</lc:X2>
+		<lc:Y2>11</lc:Y2>
+	</lc:Wire>
+	<lc:Wire>
+		<lc:WireId>91bdff56-b0be-4f9b-b586-879f9cb0e38a</lc:WireId>
+		<lc:LogicalCircuitId>bcf77041-ecd8-4a96-b89a-1bad3cd349cb</lc:LogicalCircuitId>
+		<lc:X1>14</lc:X1>
+		<lc:Y1>32</lc:Y1>
+		<lc:X2>13</lc:X2>
+		<lc:Y2>32</lc:Y2>
+	</lc:Wire>
 	<lc:TextNote>
 		<lc:TextNoteId>d8e9ed5f-f95b-4edc-a784-980356ec568b</lc:TextNoteId>
 		<lc:LogicalCircuitId>17cb9f8b-5905-456e-a2f4-9204a8b65611</lc:LogicalCircuitId>
@@ -47184,7 +47241,7 @@ QA==</lc:Data>
 		<lc:Y>36</lc:Y>
 		<lc:Width>23</lc:Width>
 		<lc:Height>12</lc:Height>
-		<lc:Note>&lt;FlowDocument TextAlignment="Left" PagePadding="5,0,5,0" AllowDrop="True" NumberSubstitution.CultureSource="User" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"&gt;&lt;Paragraph&gt;&lt;Run FontSize="20" xml:lang="zh-cn"&gt;对程序状态字进行记录，Process State Word中，0位与溢出相关，1位与零相关，2位与奇偶相关&lt;/Run&gt;&lt;/Paragraph&gt;&lt;/FlowDocument&gt;</lc:Note>
+		<lc:Note>&lt;FlowDocument TextAlignment="Left" PagePadding="5,0,5,0" AllowDrop="True" NumberSubstitution.CultureSource="User" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"&gt;&lt;Paragraph&gt;&lt;Run FontSize="20" xml:lang="zh-cn"&gt;对程序状态字进行记录，Process State Word中，1位与溢出相关，2位与零相关，3位与奇偶相关&lt;/Run&gt;&lt;/Paragraph&gt;&lt;/FlowDocument&gt;</lc:Note>
 	</lc:TextNote>
 	<lc:TextNote>
 		<lc:TextNoteId>a222968e-bcdf-4e74-bd58-ed5b44c4e5c8</lc:TextNoteId>
@@ -47509,5 +47566,13 @@ QA==</lc:Data>
 		<lc:Width>43</lc:Width>
 		<lc:Height>11</lc:Height>
 		<lc:Note>&lt;FlowDocument TextAlignment="Left" PagePadding="5,0,5,0" AllowDrop="True" NumberSubstitution.CultureSource="User" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"&gt;&lt;Paragraph&gt;&lt;Run xml:lang="zh-cn"&gt;该ROM输入16(bin)\4(hex)位，输出32(bin)\8(hex)位&lt;/Run&gt;&lt;/Paragraph&gt;&lt;Paragraph&gt;&lt;Run xml:lang="zh-cn"&gt;输入a中，(hex)第一二位为指令寄存器输出值，第三位为程序状态字，第四位为CYC循环周期数&lt;/Run&gt;&lt;/Paragraph&gt;&lt;Paragraph&gt;&lt;Run xml:lang="zh-cn"&gt;输出d中，第一位控制程序是否停止，第二位控制CPU内部程序计数器是否重置&lt;/Run&gt;&lt;/Paragraph&gt;&lt;Paragraph Margin="40,Auto,Auto,Auto"&gt;&lt;Run xml:lang="zh-cn" xml:space="preserve"&gt;       第九位到第十二位控制ALU，第十三位到第十五位控制ALU运算信号&lt;/Run&gt;&lt;/Paragraph&gt;&lt;Paragraph Margin="40,Auto,Auto,Auto"&gt;&lt;Run xml:lang="zh-cn" xml:space="preserve"&gt;       第十六位到第十八位控制外部程序计数器读写，后十四位控制寄存器读写状态，其中第十一位到第十四位控制目标寄存器和源寄存器的读写&lt;/Run&gt;&lt;/Paragraph&gt;&lt;Paragraph&gt;&lt;Run xml:lang="zh-cn" xml:space="preserve" /&gt;&lt;/Paragraph&gt;&lt;/FlowDocument&gt;</lc:Note>
+	</lc:TextNote>
+	<lc:TextNote>
+		<lc:TextNoteId>10ca1c8d-8ddc-43dc-b742-d273b69caa78</lc:TextNoteId>
+		<lc:LogicalCircuitId>553b0fda-d655-4e4c-a6a1-e86a0a9ce59c</lc:LogicalCircuitId>
+		<lc:X>49</lc:X>
+		<lc:Y>31</lc:Y>
+		<lc:Height>2</lc:Height>
+		<lc:Note>&lt;FlowDocument PagePadding="5,0,5,0" AllowDrop="True" NumberSubstitution.CultureSource="User" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"&gt;&lt;Paragraph&gt;&lt;Run xml:lang="zh-cn"&gt;RC模块控制寄存器的读写&lt;/Run&gt;&lt;/Paragraph&gt;&lt;/FlowDocument&gt;</lc:Note>
 	</lc:TextNote>
 </lc:CircuitProject>
