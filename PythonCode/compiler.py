@@ -63,10 +63,24 @@ class Code(object):
             return 0, 0
         if addr in REGISTERS:
             return pin.AM_REG, REGISTERS[addr]
+
         if re.match(r'^[0-9]+$', addr):
             return pin.AM_INS, int(addr)
+
         if re.match(r'^0X[0-9A-F]+$', addr):
             return pin.AM_INS, int(addr, 16)
+
+        match = re.match(r'^\[([0-9]+)\]$', addr)
+        if match:
+            return pin.AM_DIR, int(match.group(1))
+
+        match = re.match(r'^\[(0X[0-9A-F]+)\]$', addr)
+        if match:
+            return pin.AM_DIR, int(match.group(1), 16)
+
+        match = re.match(r'^\[(.+)\]$', addr)
+        if match and match.group(1) in REGISTERS:
+            return pin.AM_RAM, REGISTERS[match.group(1)]
 
         raise SyntaxError(self)
 
@@ -90,6 +104,13 @@ class Code(object):
 
         amd, dst = self.get_am(self.dst)
         ams, src = self.get_am(self.src)
+
+        if src and (amd, ams) not in ASM.INSTRUCTIONS[2][op]:
+            raise SyntaxError(self)
+        if not src and dst and amd not in ASM.INSTRUCTIONS[1][op]:
+            raise SyntaxError(self)
+        if not src and not dst and op not in ASM.INSTRUCTIONS[0]:
+            raise SyntaxError(self)
 
         if op in OP2SET:
             ir = op | (amd << 2) | ams

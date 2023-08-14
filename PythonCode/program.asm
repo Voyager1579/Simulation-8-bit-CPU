@@ -1,13 +1,10 @@
-MOV A, 5 ;this is annotation
 
-MOV A, 5
-
-MOV B, 10;
-
-MOV C, 11;
-
-MOV A, 0x30;
+MOV [0x30], 0xee;
 
 MOV D, 0x30;
+
+MOV C, 0x18;
+
+MOV [C], [D];
 
 hlt;

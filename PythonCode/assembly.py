@@ -26,6 +26,78 @@ INSTRUCTIONS = {
             (pin.AM_REG, pin.AM_INS): [
                 # 将源寄存器中的数写入目标寄存器
                 pin.DST_W | pin.SRC_OUT,
+            ],
+            (pin.AM_REG, pin.AM_REG): [
+                # 寄存器寻址会将源寄存器中的寄存器中的数写入目标寄存器
+                pin.DST_W | pin.SRC_R,
+            ],
+            (pin.AM_REG, pin.AM_DIR): [
+                # 直接寻址取值，从RAM寄存器中按地址取，与寄存器寻址不同
+                # 先将SRC寄存器中的数输入到数据总线，MAR读入
+                # RAM输出，目标寄存器写入
+                pin.SRC_OUT | pin.MAR_IN,
+                pin.DST_W | pin.RAM_OUT
+            ],
+            (pin.AM_REG, pin.AM_RAM): [
+                # 间接寻址取值，从SRC中获取寄存器中的地址
+                pin.SRC_R | pin.MAR_IN,
+                pin.DST_W | pin.RAM_OUT
+            ],
+            (pin.AM_DIR, pin.AM_INS): [
+                # 寄存器数值写入，往RAM寄存器写入立即数
+                # 将目标寄存器中的值写入MAR
+                pin.DST_OUT | pin.MAR_IN,
+                # 将源寄存器中的值传入数据总线，RAM寄存器接收
+                pin.RAM_IN | pin.SRC_OUT
+            ],
+            (pin.AM_DIR, pin.AM_REG): [
+                # 寄存器数值写入，往RAM寄存器写入立即数
+                # 将目标寄存器中的值写入MAR
+                pin.DST_OUT | pin.MAR_IN,
+                # 将源寄存器中的目标寄存器的值传入数据总线，RAM寄存器接收
+                pin.RAM_IN | pin.SRC_R
+            ],
+            (pin.AM_DIR, pin.AM_DIR): [
+                # 寄存器RAM之间直接传值
+                pin.SRC_OUT | pin.MAR_IN,
+                pin.RAM_OUT | pin.T1_IN,
+                pin.DST_OUT | pin.MAR_IN,
+                pin.RAM_IN | pin.T1_OUT
+            ],
+            (pin.AM_DIR, pin.AM_RAM): [
+                # 寄存器RAM之间间接传值
+                pin.SRC_R | pin.MAR_IN,
+                pin.RAM_OUT | pin.T1_IN,
+                pin.DST_OUT | pin.MAR_IN,
+                pin.RAM_IN | pin.T1_OUT
+            ],
+            (pin.AM_RAM, pin.AM_INS): [
+                # 寄存器数值写入，往RAM寄存器写入立即数
+                # 将目标寄存器中的值写入MAR
+                pin.DST_R | pin.MAR_IN,
+                # 将源寄存器中的值传入数据总线，RAM寄存器接收
+                pin.RAM_IN | pin.SRC_OUT
+            ],
+            (pin.AM_RAM, pin.AM_REG): [
+                # 寄存器数值写入，往RAM寄存器写入立即数
+                # 将目标寄存器中的值写入MAR
+                pin.DST_R | pin.MAR_IN,
+                # 将源寄存器中的目标寄存器的值传入数据总线，RAM寄存器接收
+                pin.RAM_IN | pin.SRC_R
+            ],
+            (pin.AM_RAM, pin.AM_DIR): [
+                # 寄存器RAM之间直接传值
+                pin.SRC_OUT | pin.MAR_IN,
+                pin.RAM_OUT | pin.T1_IN,
+                pin.DST_R | pin.MAR_IN,
+                pin.RAM_IN | pin.T1_OUT
+            ],
+            (pin.AM_RAM, pin.AM_RAM): [
+                # 寄存器RAM之间间接传值
+                pin.SRC_R | pin.MAR_IN,
+                pin.RAM_OUT | pin.T1_IN,
+                pin.DST_R | pin.MAR_IN,
+                pin.RAM_IN | pin.T1_OUT
             ]
         }
     },
