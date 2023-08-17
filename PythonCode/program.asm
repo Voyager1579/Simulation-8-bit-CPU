@@ -1,6 +1,10 @@
 
 MOV D, 3;
 
-NOT D;
+increase:
 
-hlt;
+    INC D;
+
+    JMP increase;
+
+    HLT;

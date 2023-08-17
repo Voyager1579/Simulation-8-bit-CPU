@@ -21,7 +21,8 @@ XOR = (6 << pin.ADDR2_SHIFT) | pin.ADDR2
 
 INC = (0 << pin.ADDR1_SHIFT) | pin.ADDR1
 DEC = (1 << pin.ADDR1_SHIFT) | pin.ADDR1
-NOT = (1 << pin.ADDR1_SHIFT) | pin.ADDR1
+NOT = (2 << pin.ADDR1_SHIFT) | pin.ADDR1
+JMP = (3 << pin.ADDR1_SHIFT) | pin.ADDR1
 
 NOP = 0
 HLT = 0x3f
@@ -219,7 +220,7 @@ INSTRUCTIONS = {
     },
     1: {
         INC: {
-            (pin.AM_REG): [
+            pin.AM_REG: [
                 # 将目标寄存器中的数写入A寄存器
                 pin.DST_R | pin.A_IN,
                 # 将计算结果输出至目标寄存器
@@ -227,7 +228,7 @@ INSTRUCTIONS = {
             ]
         },
         DEC: {
-            (pin.AM_REG): [
+            pin.AM_REG: [
                 # 将目标寄存器中的数写入A寄存器
                 pin.DST_R | pin.A_IN,
                 # 将计算结果输出至目标寄存器
@@ -235,11 +236,16 @@ INSTRUCTIONS = {
             ]
         },
         NOT: {
-            (pin.AM_REG): [
+            pin.AM_REG: [
                 # 将目标寄存器中的数写入A寄存器
                 pin.DST_R | pin.A_IN,
                 # 将计算结果输出至目标寄存器
                 pin.OP_NOT | pin.ALU_OUT | pin.DST_W | pin.ALU_PSW
+            ]
+        },
+        JMP: {
+            pin.AM_INS: [
+                pin.DST_OUT | pin.PC_IN
             ]
         }
     },
