@@ -52,7 +52,6 @@ def compile_addr1(addr, ir, psw, index):
     # 一地址指令中，第七到第八位为目标寄存器
     amd = ir & 3
 
-
     INST = ASM.INSTRUCTIONS[1]
     # 查找是否存在这样的一地址操作
     if op not in INST:

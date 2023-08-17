@@ -1,16 +1,6 @@
 
-MOV D, 15;
+MOV D, 3;
 
-INC D;
-
-INC D;
-
-DEC D;
-
-DEC D;
-
-DEC D;
-
-DEC D;
+NOT D;
 
 hlt;
