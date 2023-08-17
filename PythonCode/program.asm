@@ -1,10 +1,16 @@
 
-MOV [0x30], 0xee;
+MOV D, 15;
 
-MOV D, 0x30;
+INC D;
 
-MOV C, 0x18;
+INC D;
 
-MOV [C], [D];
+DEC D;
+
+DEC D;
+
+DEC D;
+
+DEC D;
 
 hlt;

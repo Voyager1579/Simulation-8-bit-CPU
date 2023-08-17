@@ -11,8 +11,12 @@ FETCH = [
     pin.RAM_OUT | pin.SRC_IN | pin.PC_INC,
 ]
 
-MOV = 0 | pin.ADDR2
+MOV = (0 << pin.ADDR2_SHIFT) | pin.ADDR2
 ADD = (1 << pin.ADDR2_SHIFT) | pin.ADDR2
+SUB = (2 << pin.ADDR2_SHIFT) | pin.ADDR2
+
+INC = (0 << pin.ADDR1_SHIFT) | pin.ADDR1
+DEC = (1 << pin.ADDR1_SHIFT) | pin.ADDR1
 
 NOP = 0
 HLT = 0x3f
@@ -20,7 +24,7 @@ HLT = 0x3f
 #定义指令字典,遵从Key-Value原则
 INSTRUCTIONS = {
     2: {
-        # 为Mov指令时
+        # 为Mov指令时，寄存器赋值
         MOV: {
             #为立即数Mov时，key为立即数传值(1,0)时
             (pin.AM_REG, pin.AM_INS): [
@@ -99,9 +103,67 @@ INSTRUCTIONS = {
                 pin.DST_R | pin.MAR_IN,
                 pin.RAM_IN | pin.T1_OUT
             ]
+        },
+        # 加法指令
+        ADD: {
+            #为立即数Mov时，key为立即数传值(1,0)时
+            (pin.AM_REG, pin.AM_INS): [
+                # 将目标寄存器中的数写入A寄存器
+                pin.DST_R | pin.A_IN,
+                # 对B寄存器进行立即数赋值
+                pin.SRC_OUT | pin.B_IN,
+                # 将计算结果输出至源寄存器
+                pin.OP_ADD | pin.ALU_OUT | pin.DST_W | pin.ALU_PSW
+            ],
+            (pin.AM_REG, pin.AM_REG): [
+                # 将目标寄存器中的数写入A寄存器
+                pin.DST_R | pin.A_IN,
+                # 将源寄存器中指向的寄存器的值赋值于B寄存器
+                pin.SRC_R | pin.B_IN,
+                # 将计算结果输出至源寄存器
+                pin.OP_ADD | pin.ALU_OUT | pin.DST_W | pin.ALU_PSW
+            ],
+        },
+        # 减法指令
+        SUB: {
+            #为立即数Mov时，key为立即数传值(1,0)时
+            (pin.AM_REG, pin.AM_INS): [
+                # 将目标寄存器中的数写入A寄存器
+                pin.DST_R | pin.A_IN,
+                # 对B寄存器进行立即数赋值
+                pin.SRC_OUT | pin.B_IN,
+                # 将计算结果输出至目标寄存器
+                pin.OP_SUB | pin.ALU_OUT | pin.DST_W | pin.ALU_PSW
+            ],
+            (pin.AM_REG, pin.AM_REG): [
+                # 将目标寄存器中的数写入A寄存器
+                pin.DST_R | pin.A_IN,
+                # 将源寄存器中指向的寄存器的值赋值于B寄存器
+                pin.SRC_R | pin.B_IN,
+                # 将计算结果输出至目标寄存器
+                pin.OP_SUB | pin.ALU_OUT | pin.DST_W | pin.ALU_PSW
+            ],
+        }
+
+    },
+    1: {
+        INC: {
+            (pin.AM_REG): [
+                # 将目标寄存器中的数写入A寄存器
+                pin.DST_R | pin.A_IN,
+                # 将计算结果输出至目标寄存器
+                pin.OP_INC | pin.ALU_OUT | pin.DST_W | pin.ALU_PSW
+            ]
+        },
+        DEC: {
+            (pin.AM_REG): [
+                # 将目标寄存器中的数写入A寄存器
+                pin.DST_R | pin.A_IN,
+                # 将计算结果输出至目标寄存器
+                pin.OP_DEC | pin.ALU_OUT | pin.DST_W | pin.ALU_PSW
+            ]
         }
     },
-    1: {},
     0: {
         NOP: [
             pin.CYC,
