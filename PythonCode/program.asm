@@ -6,5 +6,3 @@ increase:
     INC D;
 
     JMP increase;
-
-    HLT;

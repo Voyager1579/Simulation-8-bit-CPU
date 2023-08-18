@@ -78,6 +78,8 @@ class Code(object):
         if not addr:
             return None, None
 
+
+        #取指令时，PC会自增三次，所以回退时，跨度为三
         if addr in MARKS:
             return pin.AM_INS, MARKS[addr].index * 3
 
@@ -164,7 +166,7 @@ class SyntaxError(Exception):
 
 def compile_program():
     global codes
-    global marks
+    global MARKS
 
     with open(inputfile, encoding='utf8') as file:
         lines = file.readlines()
@@ -192,6 +194,7 @@ def compile_program():
             current = code
             result.insert(0, code)
             continue
+        # 当找到标记语句时，current变量中存储的就是标记行的下一句
         if code.type == Code.TYPE_LABEL:
             MARKS[code.name] = current
             continue
