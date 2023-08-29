@@ -4,5 +4,14 @@ MOV D, 3;
 increase:
 
     INC D;
+    CMP D,5;
+    JO increase;
 
-    JMP increase;
+decrease:
+
+    DEC D;
+    CMP D,0;
+    JZ increase;
+    JMP decrease;
+
+    HLT;

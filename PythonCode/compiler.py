@@ -29,7 +29,13 @@ OP1 = {
     'INC': ASM.INC,
     'DEC': ASM.DEC,
     'NOT': ASM.NOT,
-    'JMP': ASM.JMP
+    'JMP': ASM.JMP,
+    'JO': ASM.JO,
+    'JNO': ASM.JNO,
+    'JZ': ASM.JZ,
+    'JNZ': ASM.JNZ,
+    'JP': ASM.JP,
+    'JNP': ASM.JNP
 }
 
 OP0 = {

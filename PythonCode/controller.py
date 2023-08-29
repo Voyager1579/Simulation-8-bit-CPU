@@ -11,6 +11,9 @@ filename = os.path.join(dirname, 'micro.bin')
 # 初始化微指令内容，全部置暂停
 micro = [pin.HLT for _ in range(0x10000)]
 
+# 跳转指令集
+CJMPS = {ASM.JO, ASM.JNO, ASM.JZ, ASM.JNZ, ASM.JP, ASM.JNP}
+
 # 编译二地址指令函数
 def compile_addr2(addr, ir, psw, index):
     global micro
@@ -42,9 +45,28 @@ def compile_addr2(addr, ir, psw, index):
     else:
         micro[addr] = pin.CYC
 
+def get_condition_jump(exec, op, psw):
+    overflow = psw & 1
+    zero = psw & 2
+    parity = psw & 4
+
+    if op == ASM.JO and overflow:
+        return exec
+    if op == ASM.JNO and not overflow:
+        return exec
+    if op == ASM.JZ and zero:
+        return exec
+    if op == ASM.JNZ and not zero:
+        return exec
+    if op == ASM.JP and parity:
+        return exec
+    if op == ASM.JNP and parity:
+        return exec
+    return [pin.CYC]
 
 def compile_addr1(addr, ir, psw, index):
     global micro
+    global CJMPS
 
     # 以下位为从左往右计数
     # 指令前六位为操作信号
@@ -65,6 +87,8 @@ def compile_addr1(addr, ir, psw, index):
 
     # 获取执行机器码(微指令)
     EXEC = INST[op][amd]
+    if op in CJMPS:
+        EXEC = get_condition_jump(EXEC, op, psw)
 
     if index < len(EXEC):
         micro[addr] = EXEC[index]
