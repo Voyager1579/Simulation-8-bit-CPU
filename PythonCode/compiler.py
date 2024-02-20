@@ -35,7 +35,9 @@ OP1 = {
     'JZ': ASM.JZ,
     'JNZ': ASM.JNZ,
     'JP': ASM.JP,
-    'JNP': ASM.JNP
+    'JNP': ASM.JNP,
+    "PUSH": ASM.PUSH,
+    "POP": ASM.POP,
 }
 
 OP0 = {
@@ -52,6 +54,9 @@ REGISTERS = {
     "B": pin.B,
     "C": pin.C,
     "D": pin.D,
+    "SS": pin.SS,
+    "SP": pin.SP,
+    "CS": pin.CS,
 }
 
 
