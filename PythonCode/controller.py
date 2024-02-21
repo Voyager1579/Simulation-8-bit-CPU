@@ -64,6 +64,12 @@ def get_condition_jump(exec, op, psw):
         return exec
     return [pin.CYC]
 
+def get_interrupt(exec, op, psw):
+    interrupt = psw & 8
+    if interrupt:
+        return exec
+    return [pin.CYC]
+
 def compile_addr1(addr, ir, psw, index):
     global micro
     global CJMPS
