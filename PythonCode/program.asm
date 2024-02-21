@@ -1,15 +1,18 @@
+   mov ss, 1
+    MOV SP, 0x20 ; [0, 0xf]
+    jmp start
 
-    MOV ss,1
-    MOV SP,0x10
-    MOV D, 10
+show:
+    mov d, 255;
+    ret; return;
 
-    push D
-    push 1
+start:
+    mov c, 0
 
-    POP C
-    POP B
-    MOV A,C
-    ADD A,B
-    MOV D,A
+increase:
+    inc c;
+    mov d, c;
+    call show
+    jmp increase
 
-    HLT;
+    HLT
