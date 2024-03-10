@@ -3693,7 +3693,7 @@ ABAAAAAgAAAAQAAAAIA=</lc:Data>
 		<lc:OnStart>Data</lc:OnStart>
 		<lc:AddressBitWidth>16</lc:AddressBitWidth>
 		<lc:DataBitWidth>8</lc:DataBitWidth>
-		<lc:Data>hBIBhA4gTA8AhAv/AgAAhAoAQQoAhQsKYCEAAwAATCQABAAAdAkATBIAPwAAPwAAAAAAAAAAAAAA
+		<lc:Data>hAsAQQsAtAsFUAMARQsAtAsAWAMATAwAPwAAPwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
@@ -47859,7 +47859,7 @@ QA==</lc:Data>
 		<lc:Y>49</lc:Y>
 		<lc:Width>23</lc:Width>
 		<lc:Height>12</lc:Height>
-		<lc:Note>&lt;FlowDocument TextAlignment="Left" PagePadding="5,0,5,0" AllowDrop="True" NumberSubstitution.CultureSource="User" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"&gt;&lt;Paragraph&gt;&lt;Run FontSize="20" xml:lang="zh-cn"&gt;对程序状态字进行记录，Process State Word中，1位判断是否溢出，2位判断是否为零，3位判断奇偶状态&lt;/Run&gt;&lt;/Paragraph&gt;&lt;/FlowDocument&gt;</lc:Note>
+		<lc:Note>&lt;FlowDocument TextAlignment="Left" PagePadding="5,0,5,0" AllowDrop="True" NumberSubstitution.CultureSource="User" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"&gt;&lt;Paragraph&gt;&lt;Run FontSize="20" xml:lang="zh-cn"&gt;对程序状态字进行记录，Process State Word中，1位判断是否溢出，2位判断是否为零，3位判断奇偶状态，4位判断中断信号&lt;/Run&gt;&lt;/Paragraph&gt;&lt;/FlowDocument&gt;</lc:Note>
 	</lc:TextNote>
 	<lc:TextNote>
 		<lc:TextNoteId>a222968e-bcdf-4e74-bd58-ed5b44c4e5c8</lc:TextNoteId>

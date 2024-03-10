@@ -30,11 +30,18 @@ OP1 = {
     'DEC': ASM.DEC,
     'NOT': ASM.NOT,
     'JMP': ASM.JMP,
+    # 6大条件跳转，根据PSW来判定
+    # 溢出跳转
     'JO': ASM.JO,
+    # 非溢出跳转
     'JNO': ASM.JNO,
+    # 零跳转
     'JZ': ASM.JZ,
+    # 非零跳转
     'JNZ': ASM.JNZ,
+    # 奇数跳转
     'JP': ASM.JP,
+    # 非奇数跳转
     'JNP': ASM.JNP,
     "PUSH": ASM.PUSH,
     "POP": ASM.POP,
